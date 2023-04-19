@@ -1,0 +1,50 @@
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 9px;
+  color: #fff;
+
+  transition: all .3s;
+
+  &--full {
+
+    &:link,
+    &:visited {
+      background-color: #e67e22;
+    }
+
+    &:hover,
+    &:active {
+      background-color: #cf711f;
+    }
+
+  }
+
+  &--outline {
+    border: 3px solid transparent;
+
+    &:link,
+    &:visited {
+      background-color: #fff;
+      color: #555;
+    }
+
+    &:hover,
+    &:active {
+      background-color: #fdf2e9;
+      border-color: #fff;
+    }
+  }
+}

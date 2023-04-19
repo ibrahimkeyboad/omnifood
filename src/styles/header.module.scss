@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+
+  &__logo {
+    height: 2.4rem;
+    width: auto;
+  }
+
+  &__nav {
+
+
+
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 3.2rem;
+    }
+
+
+
+    &__link {
+      font-size: 1.8rem;
+      font-weight: 500;
+      transition: all .3s;
+
+      &:link,
+      &:visited {
+        color: #333;
+      }
+
+      &:hover,
+      &:active {
+        color: #cf711f;
+
+      }
+    }
+
+    &__cta {
+
+      padding: 1.2rem 2.4rem;
+      background-color: #e67e22;
+      border-radius: 9px;
+
+      &:link,
+      &:hover {
+        color: #fff;
+
+      }
+
+
+
+      &:hover,
+      &:active {
+        background-color: #cf711f;
+      }
+    }
+  }
+}
