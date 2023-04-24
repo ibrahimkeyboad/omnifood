@@ -1,19 +1,22 @@
 import React from 'react';
+import styles from '@/styles/cta.module.scss';
 
 function CallToAction() {
   return (
-    <section class='section-cta'>
+    <section class={styles['section-cta']}>
       <div class='container'>
-        <div class='cta'>
-          <div class='cta-text-box'>
-            <h2 class='heading-secondary'>Get your first meal for free!</h2>
-            <p class='cta-text'>
+        <div class={styles['cta']}>
+          <div class={styles['cta-text-box']}>
+            <h2 class={`heading-secondary ${styles['cta-heading-secondary']}`}>
+              Get your first meal for free!
+            </h2>
+            <p class={styles['cta-text']}>
               Healthy, tasty and hassle-free meals are waiting for you. Start
               eating well today. You can cancel or pause anytime. And the first
               meal is on us!
             </p>
 
-            <form class='cta-form' action='#'>
+            <form class={styles['cta-form']} action='#'>
               <div>
                 <label for='full-name'>Full Name</label>
                 <input
@@ -53,7 +56,7 @@ function CallToAction() {
             </form>
           </div>
           <div
-            class='cta-img-box'
+            class={styles['cta-img-box']}
             role='img'
             aria-label='Woman enjoying food'></div>
         </div>

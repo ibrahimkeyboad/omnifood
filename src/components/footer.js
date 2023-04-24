@@ -1,120 +1,134 @@
 import React from 'react';
+import styles from '@/styles/footer.module.scss';
+import Image from 'next/image';
 
 function Footer() {
   return (
-    <footer class='footer'>
-      <div class='container grid grid--footer'>
-        <div class='logo-col'>
-          <a href='#' class='footer-logo'>
-            <img class='logo' alt='Omnifood logo' src='img/omnifood-logo.png' />
+    <footer class={styles['footer']}>
+      <div class={`container grid ${styles['footer--grid']}`}>
+        <div class={styles['logo-col']}>
+          <a href='#' class={styles['footer-logo']}>
+            <Image
+              width={200}
+              height={200}
+              class='logo'
+              alt='Omnifood logo'
+              src='/img/omnifood-logo.png'
+            />
           </a>
 
-          <ul class='social-links'>
+          <ul class={styles['social-links']}>
             <li>
-              <a class='footer-link' href='#'>
-                <ion-icon class='social-icon' name='logo-instagram'></ion-icon>
+              <a class={styles['footer-link']} href='#'>
+                <ion-icon
+                  class={styles['social-icon']}
+                  name='logo-instagram'></ion-icon>
               </a>
             </li>
             <li>
-              <a class='footer-link' href='#'>
-                <ion-icon class='social-icon' name='logo-facebook'></ion-icon>
+              <a class={styles['footer-link']} href='#'>
+                <ion-icon
+                  class={styles['social-icon']}
+                  name='logo-facebook'></ion-icon>
               </a>
             </li>
             <li>
-              <a class='footer-link' href='#'>
-                <ion-icon class='social-icon' name='logo-twitter'></ion-icon>
+              <a class={styles['footer-link']} href='#'>
+                <ion-icon
+                  class={styles['social-icon']}
+                  name='logo-twitter'></ion-icon>
               </a>
             </li>
           </ul>
 
-          <p class='copyright'>
+          <p class={styles['copyright']}>
             Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
           </p>
         </div>
-        <div class='address-col'>
-          <p class='footer-heading'>Contact us</p>
-          <address class='contacts'>
-            <p class='address'>
+        <div class={styles['address-col']}>
+          <p class={styles['footer-heading']}>Contact us</p>
+          <address class={styles['contacts']}>
+            <p class={styles['address']}>
               623 Harrison St., 2nd Floor, San Francisco, CA 94107
             </p>
             <p>
-              <a class='footer-link' href='tel:415-201-6370'>
+              <a class={styles['footer-link']} href='tel:415-201-6370'>
                 415-201-6370
               </a>
               <br />
-              <a class='footer-link' href='mailto:hello@omnifood.com'>
+              <a class={styles['footer-link']} href='mailto:hello@omnifood.com'>
                 hello@omnifood.com
               </a>
             </p>
           </address>
         </div>
-        <nav class='nav-col'>
-          <p class='footer-heading'>Account</p>
-          <ul class='footer-nav'>
+        <nav class={styles['nav-col']}>
+          <p class={styles['footer-heading']}>Account</p>
+          <ul class={styles['footer-nav']}>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 Create account
               </a>
             </li>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 Sign in
               </a>
             </li>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 iOS app
               </a>
             </li>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 Android app
               </a>
             </li>
           </ul>
         </nav>
 
-        <nav class='nav-col'>
-          <p class='footer-heading'>Company</p>
-          <ul class='footer-nav'>
+        <nav class={styles['nav-col']}>
+          <p class={styles['footer-heading']}>Company</p>
+          <ul class={styles['footer-nav']}>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 About Omnifood
               </a>
             </li>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 For Business
               </a>
             </li>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 Cooking partners
               </a>
             </li>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 Careers
               </a>
             </li>
           </ul>
         </nav>
 
-        <nav class='nav-col'>
-          <p class='footer-heading'>Resources</p>
-          <ul class='footer-nav'>
+        <nav class={styles['nav-col']}>
+          <p class={styles['footer-heading']}>Resources</p>
+          <ul class={styles['footer-nav']}>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 Recipe directory{' '}
               </a>
             </li>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 Help center
               </a>
             </li>
             <li>
-              <a class='footer-link' href='#'>
+              <a class={styles['footer-link']} href='#'>
                 Privacy & terms
               </a>
             </li>

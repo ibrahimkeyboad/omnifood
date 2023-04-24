@@ -1,8 +1,11 @@
 import React from 'react';
 
+import styles from '@/styles/meals.module.scss';
+import Image from 'next/image';
+
 function Meals() {
   return (
-    <section class='section-meals'>
+    <section class={styles['section-meals']}>
       <div class='container center-text'>
         <span class='subheading'>Meals</span>
         <h2 class='heading-secondary'>
@@ -11,34 +14,42 @@ function Meals() {
       </div>
 
       <div class='container grid grid--3-cols margin-bottom-md'>
-        <div class='meal'>
-          <img
+        <div class={styles['meal']}>
+          <Image
+            height={600}
+            width={600}
             src='/img/meals/meal-1.jpg'
-            class='meal-img'
+            class={styles['meal-img']}
             alt='Japanese Gyozas'
           />
-          <div class='meal-content'>
-            <div class='meal-tags'>
-              <span class='tag tag--vegetarian'>Vegetarian</span>
+          <div class={styles['meal-content']}>
+            <div class={styles['meal-tags']}>
+              <span class={`${styles.tag} ${styles['tag--vegetarian']}`}>
+                Vegetarian
+              </span>
             </div>
-            <p class='meal-title'>Japanese Gyozas</p>
-            <ul class='meal-attributes'>
-              <li class='meal-attribute'>
-                <ion-icon class='meal-icon' name='flame-outline'></ion-icon>
+            <p class={styles['meal-title']}>Japanese Gyozas</p>
+            <ul class={styles['meal-attributes']}>
+              <li class={styles['meal-attribute']}>
+                <ion-icon
+                  class={styles['meal-icon']}
+                  name='flame-outline'></ion-icon>
                 <span>
                   <strong>650</strong> calories
                 </span>
               </li>
-              <li class='meal-attribute'>
+              <li class={styles['meal-attribute']}>
                 <ion-icon
-                  class='meal-icon'
+                  class={styles['meal-icon']}
                   name='restaurant-outline'></ion-icon>
                 <span>
                   NutriScore &reg; <strong>74</strong>
                 </span>
               </li>
-              <li class='meal-attribute'>
-                <ion-icon class='meal-icon' name='star-outline'></ion-icon>
+              <li class={styles['meal-attribute']}>
+                <ion-icon
+                  class={styles['meal-icon']}
+                  name='star-outline'></ion-icon>
                 <span>
                   <strong>4.9</strong> rating (537)
                 </span>
@@ -47,26 +58,30 @@ function Meals() {
           </div>
         </div>
 
-        <div class='meal'>
-          <img
+        <div class={styles['meal']}>
+          <Image
+            width={600}
+            height={600}
             src='/img/meals/meal-2.jpg'
-            class='meal-img'
+            class={styles['meal-img']}
             alt='Avocado Salad'
           />
-          <div class='meal-content'>
-            <div class='meal-tags'>
+          <div class={styles['meal-content']}>
+            <div class={styles['meal-tags']}>
               <span class='tag tag--vegan'>Vegan</span>
               <span class='tag tag--paleo'>Paleo</span>
             </div>
-            <p class='meal-title'>Avocado Salad</p>
-            <ul class='meal-attributes'>
-              <li class='meal-attribute'>
-                <ion-icon class='meal-icon' name='flame-outline'></ion-icon>
+            <p class={styles['meal-title']}>Avocado Salad</p>
+            <ul class={styles['meal-attributes']}>
+              <li class={styles['meal-attribute']}>
+                <ion-icon
+                  class={styles['meal-icon']}
+                  name='flame-outline'></ion-icon>
                 <span>
                   <strong>400</strong> calories
                 </span>
               </li>
-              <li class='meal-attribute'>
+              <li class={styles['meal-attribute']}>
                 <ion-icon
                   class='meal-icon'
                   name='restaurant-outline'></ion-icon>
@@ -74,8 +89,10 @@ function Meals() {
                   NutriScore &reg; <strong>92</strong>
                 </span>
               </li>
-              <li class='meal-attribute'>
-                <ion-icon class='meal-icon' name='star-outline'></ion-icon>
+              <li class={styles['meal-attribute']}>
+                <ion-icon
+                  class={styles['meal-icon']}
+                  name='star-outline'></ion-icon>
                 <span>
                   <strong>4.8</strong> rating (441)
                 </span>
@@ -127,7 +144,7 @@ function Meals() {
         </div>
       </div>
 
-      <div class='container all-recipes'>
+      <div class={`container ${styles['all-recipes']}`}>
         <a href='#' class='link'>
           See all recipes &rarr;
         </a>
