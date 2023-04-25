@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+a {
+  white-space: nowrap;
+}
+
 .grid {
   display: grid;
   column-gap: 6.4rem;

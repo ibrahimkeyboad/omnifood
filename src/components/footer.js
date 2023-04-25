@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from '@/styles/footer.module.scss';
 import Image from 'next/image';
+import styles from '@/styles/footer.module.scss';
+import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from 'react-icons/io';
 
 function Footer() {
   return (
@@ -20,23 +20,17 @@ function Footer() {
           <ul class={styles['social-links']}>
             <li>
               <a class={styles['footer-link']} href='#'>
-                <ion-icon
-                  class={styles['social-icon']}
-                  name='logo-instagram'></ion-icon>
+                <IoLogoInstagram class={styles['social-icon']} />
               </a>
             </li>
             <li>
               <a class={styles['footer-link']} href='#'>
-                <ion-icon
-                  class={styles['social-icon']}
-                  name='logo-facebook'></ion-icon>
+                <IoLogoFacebook class={styles['social-icon']} />
               </a>
             </li>
             <li>
               <a class={styles['footer-link']} href='#'>
-                <ion-icon
-                  class={styles['social-icon']}
-                  name='logo-twitter'></ion-icon>
+                <IoLogoTwitter class={styles['social-icon']} />
               </a>
             </li>
           </ul>

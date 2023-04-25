@@ -17,29 +17,29 @@ function Header() {
         <ul className={styles.header__nav__list}>
           <li>
             <Link className={styles.header__nav__link} href='#'>
-              section 01
+              How it works
             </Link>
           </li>
           <li>
             <Link className={styles.header__nav__link} href='#'>
-              section 02
+              Meals
             </Link>
           </li>
           <li>
             <Link className={styles.header__nav__link} href='#'>
-              section 03
+              Testimonials
             </Link>
           </li>
           <li>
             <Link className={styles.header__nav__link} href='#'>
-              section 04
+              Pricing
             </Link>
           </li>
           <li>
             <Link
               className={` ${styles.header__nav__cta}  ${styles.header__nav__link}`}
               href='#'>
-              section 05
+              Try for free
             </Link>
           </li>
         </ul>
