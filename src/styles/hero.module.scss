@@ -2,6 +2,12 @@
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 
+
+  @media (max-width: 34em) {
+    padding: 2.4rem 0 6.4rem 0;
+
+  }
+
 }
 
 .delivered {
@@ -31,6 +37,7 @@
   &-text {
     font-size: 1.8rem;
     font-weight: 600;
+    white-space: nowrap;
 
     span {
       color: #cf711f;
@@ -43,11 +50,42 @@
 .hero {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 3.4rem;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 9.6rem;
+
+  &-text-box {
+    @media (max-width:59em) {
+
+      text-align: center;
+    }
+
+  }
+
+
+  @media(max-width: 84em) {
+    max-width: 120rem;
+  }
+
+  @media (max-width : 75em) {
+    gap: 4.8rem;
+
+  }
+
+  @media (max-width : 59em) {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+
+  }
+
+  @media (max-width: 34em) {
+    padding: 0 3.2rem;
+
+
+  }
 
 
 
@@ -60,13 +98,33 @@
 
   &__btnContainer {
     display: flex;
+    align-items: center;
     gap: 1.5rem;
+
+
+    @media (max-width: 59em) {
+      justify-content: center;
+
+    }
   }
 
 
+
   &-img {
+
+    &-box {
+      text-align: center;
+    }
+
     width: 100%;
     height: auto;
-    object-fit: cover;
+
+    @media (max-width: 59em) {
+      width: 60%;
+    }
+
+    @media (max-width: 34em) {
+      width: 80%;
+    }
   }
 }

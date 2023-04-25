@@ -2,24 +2,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
 
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
 
-  &__logo {
-    height: 2.4rem;
-    width: auto;
+  position: relative;
+
+
+  @media (max-width:75em) {
+    padding: 0 3.2rem;
   }
+
 
   &__nav {
 
+    @media (max-width: 59em) {
+      display: none;
 
+    }
 
     &__list {
       display: flex;
       align-items: center;
-      gap: 3.2rem;
+      gap: 4.8rem;
+
+      @media (max-width:75em) {
+        gap: 4.8rem;
+      }
     }
 
 

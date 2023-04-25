@@ -17,9 +17,28 @@
   overflow: hidden;
 
 
+
+  @media (max-width:59em) {
+    grid-template-columns: 3fr 2fr;
+
+  }
+
+  @media (max-width:34em) {
+    grid-template-columns: 1fr;
+
+
+  }
+
+
   &-text-box {
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
     color: #45260a;
+
+    @media (max-width:34em) {
+      padding: 3.2rem;
+
+
+    }
   }
 
   &-heading-secondary {
@@ -41,6 +60,13 @@
       url("/img/eating.jpg");
     background-size: cover;
     background-position: center;
+
+    @media (max-width:34em) {
+      height: 32rem;
+      grid-row: 1;
+
+
+    }
   }
 
   &-form {
@@ -48,6 +74,12 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 3.2rem;
     row-gap: 2.4rem;
+
+    @media (max-width:59em) {
+      grid-template-columns: 1fr;
+
+
+    }
 
 
     & label {

@@ -16,6 +16,11 @@
 
   &-content {
     padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+
+    @media (max-width) {
+      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+
+    }
   }
 
   &-tags {

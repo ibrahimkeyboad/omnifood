@@ -22,5 +22,13 @@
     width: auto;
     filter: brightness(0);
     opacity: 50%;
+
+    @media (max-width: 59em) {
+      height: 2.4rem;
+    }
+
+    @media (max-width: 59em) {
+      height: 1.2rem;
+    }
   }
 }

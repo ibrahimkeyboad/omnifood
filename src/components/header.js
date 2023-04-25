@@ -11,7 +11,7 @@ function Header() {
         alt='ominfood logo'
         width={200}
         height={200}
-        className={styles.header__logo}
+        className='logo'
       />
       <nav className={styles.header__nav}>
         <ul className={styles.header__nav__list}>

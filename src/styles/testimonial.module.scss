@@ -3,10 +3,19 @@
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
+
+  @media (max-width: 59em) {
+    grid-template-columns: 1fr;
+
+  }
 }
 
 .testimonials-container {
   padding: 9.6rem;
+
+  @media (max-width:75em) {
+    padding: 9.6rem 3.2rem;
+  }
 }
 
 .testimonials {
@@ -14,6 +23,12 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
   column-gap: 8rem;
+
+
+  @media (max-width: 34em) {
+    grid-template-columns: 1fr;
+
+  }
 
 
   &-img {
@@ -40,6 +55,18 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
+
+  @media (max-width: 84em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 59em) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media (max-width: 59em) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
 
   &-item {

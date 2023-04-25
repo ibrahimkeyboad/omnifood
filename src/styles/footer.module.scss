@@ -5,6 +5,11 @@
 
   &--grid {
     grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+
+    @media (max-width: 44em) {
+      grid-template-columns: repeat(6, 1fr);
+
+    }
   }
 
   &-logo {
@@ -46,6 +51,10 @@
 .logo-col {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 44em) {
+    grid-column: span 3;
+  }
 }
 
 .contacts {
@@ -75,4 +84,12 @@
   line-height: 1.6;
   color: #767676;
   margin-top: auto;
+}
+
+.nav-col {
+  @media (max-width: 44em) {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
 }
