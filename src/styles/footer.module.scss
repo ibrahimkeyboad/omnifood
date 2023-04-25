@@ -65,6 +65,10 @@
 
 .address {
   margin-bottom: 2.4rem;
+
+  @media (max-width: 44em) {
+    grid-column: span 3;
+  }
 }
 
 
