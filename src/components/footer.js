@@ -58,7 +58,7 @@ function Footer() {
         </div>
         <nav class={styles['nav-col']}>
           <p class={styles['footer-heading']}>Account</p>
-          <ul class={styles['footer-nav']}>
+          <ul class='footer-nav'>
             <li>
               <a class={styles['footer-link']} href='#'>
                 Create account
@@ -84,7 +84,7 @@ function Footer() {
 
         <nav class={styles['nav-col']}>
           <p class={styles['footer-heading']}>Company</p>
-          <ul class={styles['footer-nav']}>
+          <ul class='footer-nav'>
             <li>
               <a class={styles['footer-link']} href='#'>
                 About Omnifood
@@ -110,7 +110,7 @@ function Footer() {
 
         <nav class={styles['nav-col']}>
           <p class={styles['footer-heading']}>Resources</p>
-          <ul class={styles['footer-nav']}>
+          <ul class='footer-nav'>
             <li>
               <a class={styles['footer-link']} href='#'>
                 Recipe directory{' '}
