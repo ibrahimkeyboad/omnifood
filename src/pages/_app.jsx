@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta charSet='UTF-8' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
+        <meta name='theme-color' content='#fdf2e9' />
         <meta
           name='description'
           content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }) {
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <link rel='icon' href='/img/favicon.png' />
         <link rel='apple-touch-icon' href='/img/apple-touch-icon.png' />
+        <link rel='manifest' href='/manifest.webmanifest' />
         <title>Omnifood &mdash; Never cook again!</title>
       </Head>
       <main className={rubik.className}>

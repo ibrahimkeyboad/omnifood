@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import styles from '@/styles/footer.module.scss';
 import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from 'react-icons/io';
+import Link from 'next/link';
 
 function Footer() {
   return (
     <footer className={styles['footer']}>
       <div className={`container grid ${styles['footer--grid']}`}>
         <div className={styles['logo-col']}>
-          <a href='#' className={styles['footer-logo']}>
+          <Link href='#' className={styles['footer-logo']}>
             <Image
               width={200}
               height={200}
@@ -15,23 +16,29 @@ function Footer() {
               alt='Omnifood logo'
               src='/img/omnifood-logo.png'
             />
-          </a>
+          </Link>
 
           <ul className={styles['social-links']}>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link
+                aria-label='instagram'
+                className={styles['footer-link']}
+                href='#'>
                 <IoLogoInstagram className={styles['social-icon']} />
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link aria-label='fb' className={styles['footer-link']} href='#'>
                 <IoLogoFacebook className={styles['social-icon']} />
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link
+                aria-label='twitter'
+                className={styles['footer-link']}
+                href='#'>
                 <IoLogoTwitter className={styles['social-icon']} />
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -46,9 +53,9 @@ function Footer() {
               623 Harrison St., 2nd Floor, San Francisco, CA 94107
             </p>
             <p>
-              <a className={styles['footer-link']} href='tel:415-201-6370'>
+              <Link className={styles['footer-link']} href='tel:415-201-6370'>
                 415-201-6370
-              </a>
+              </Link>
               <br />
               <a
                 className={styles['footer-link']}
@@ -62,24 +69,24 @@ function Footer() {
           <p className={styles['footer-heading']}>Account</p>
           <ul className='footer-nav'>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 Create account
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 Sign in
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 iOS app
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 Android app
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -88,24 +95,24 @@ function Footer() {
           <p className={styles['footer-heading']}>Company</p>
           <ul className='footer-nav'>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 About Omnifood
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 For Business
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 Cooking partners
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 Careers
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -114,19 +121,19 @@ function Footer() {
           <p className={styles['footer-heading']}>Resources</p>
           <ul className='footer-nav'>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 Recipe directory{' '}
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 Help center
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer-link']} href='#'>
+              <Link className={styles['footer-link']} href='#'>
                 Privacy & terms
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

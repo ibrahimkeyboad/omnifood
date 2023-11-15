@@ -12,9 +12,6 @@ import Head from 'next/head';
 function Index() {
   return (
     <>
-      <Head>
-        <title>Omnifood</title>
-      </Head>
       <Header />
       <HeroSection />
       <Features />

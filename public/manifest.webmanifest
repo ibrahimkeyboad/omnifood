@@ -1,10 +1,24 @@
 {
-  "name": "My Next.js Application",
-  "short_name": "Next.js App",
-  "description": "An application built with Next.js",
+  "name": "Omnifood app",
+  "short_name": "Omnifood",
+  "description": "Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs.",
   "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdf2e9",
+  "theme_color": "#fdf2e9",
+
   "icons": [
-    { "src": "/img/favicon-192.png", "type": "image/png", "sizes": "192x192" },
-    { "src": "/img/favicon-512.png", "type": "image/png", "sizes": "512x512" }
+    {
+      "src": "/img/favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/favicon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
   ]
 }
